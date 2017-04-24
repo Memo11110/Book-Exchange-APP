@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2f2f2" >
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#04B486"
+        android:gravity="center_vertical|left"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/back_button" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:paddingRight="5dp"
+            android:text="@string/title_activity_bookDetail"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_header"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:id="@+id/ll_OuterMost"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_imgOuter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="#04b486" >
+
+                <ImageView
+                    android:id="@+id/img_book"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:background="#f2f2f2"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY" />
+
+                <ProgressBar
+                    android:id="@+id/pb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_bookOuter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/tv_book"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:padding="2dp"
+                    android:text="@string/tv_book"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/light_nion"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_bookName"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.65"
+                    android:padding="2dp"
+                    android:text="@string/tv_bookName"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_isbnOuter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="2dp" >
+
+                <TextView
+                    android:id="@+id/tv_isbn"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:padding="2dp"
+                    android:text="@string/tv_isbn"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/light_nion"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_bookISBN"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.65"
+                    android:padding="2dp"
+                    android:text="@string/tv_isbn"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_priceOuter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:padding="2dp"
+                    android:text="@string/tv_price"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/light_nion"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_bookPrice"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.65"
+                    android:padding="2dp"
+                    android:text="@string/tv_price"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_conditionOuter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/tv_cond"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:padding="2dp"
+                    android:text="@string/tv_condition"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/light_nion"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_bookCondition"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.65"
+                    android:padding="2dp"
+                    android:text="@string/tv_condition"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_issueOuter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/tv_issue"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:padding="2dp"
+                    android:text="@string/tv_issueDate"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/light_nion"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_bookIssueDate"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.65"
+                    android:padding="2dp"
+                    android:text="@string/tv_issueDate"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_bookURL"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/tv_url"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:padding="2dp"
+                    android:text="@string/tv_bookUrl"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/light_nion"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_bookUrl"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.65"
+                    android:padding="2dp"
+                    android:text="@string/tv_bookUrl"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_descrOuter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/tv_desc"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:padding="2dp"
+                    android:text="@string/tv_description"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/light_nion"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.65"
+                    android:padding="2dp"
+                    android:text="@string/tv_description"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_uploadOuter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:visibility="gone"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/tv_upload"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:padding="2dp"
+                    android:text="@string/tv_uploadedBy"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/light_nion"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_uploadedBY"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.65"
+                    android:padding="2dp"
+                    android:text="@string/tv_uploadedBy"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_buttonOuter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:weightSum="1" >
+
+                <Button
+                    android:id="@+id/btn_order"
+                    android:layout_width="0dip"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.50"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/button_selector"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="@string/btn_order"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="0dip"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/button_selector"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="@string/btn_cancel"
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

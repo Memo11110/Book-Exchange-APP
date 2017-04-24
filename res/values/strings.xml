@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BookExchange</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="app_noConnection">Your internet connection may be appear offline. Please connect to working Internet connection</string>
+    <string name="app_error">No response from BookExchange server</string>
+    <string name="app_pleaseWait">Please Wait</string>
+    <string name="app_logoutMessage">Are you sure you want to logout ?</string>
+    <string name="app_orderBook">Do you want to Purchase this Book ?</string>
+    <string name="app_deleteBook">Do you want to Delete this Book ?</string>
+    <string name="app_dialogTakePicture">Take Picture</string>
+    <string name="app_dialogPickGallery">Pick From Gallary</string>
+    <string name="app_dialogSelectImage">Select Image</string>
+
+    <!-- Title String -->
+    <string name="title_activity_registration">Registration</string>
+    <string name="title_activity_forgot_pass">Forgot Password</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_profile">Profile Setting</string>
+    <string name="title_activity_edit_profile">Edit Profile</string>
+    <string name="title_activity_mybook">My Books</string>
+    <string name="title_activity_purchase">My Purchased Books</string>
+    <string name="title_activity_addbook">Add Book</string>
+    <string name="title_activity_bookDetail">Book Detail</string>
+    <string name="title_activity_myProfile">My Profile</string>
+
+    <!-- Hint String -->
+    <string name="hint_email">Email</string>
+    <string name="hint_pass">Password</string>
+    <string name="hint_userName">User Name</string>
+    <string name="hint_phone">Phone Number</string>
+    <string name="hint_about">About me</string>
+    <string name="hint_confirmPass">Confirm Password</string>
+    <string name="hint_bookSearch">Search by BookName/ISBN</string>
+    <string name="hint_bookName">Book Name</string>
+    <string name="hint_isbn">ISBN</string>
+    <string name="hint_price">Price</string>
+    <string name="hint_descri">Description</string>
+    <string name="hint_url">Book URL</string>
+    <string name="hint_condition">Condition</string>
+    <string name="hint_issuedate">Issue Date</string>
+
+    <!-- Text String -->
+    <string name="tv_email">Email:-</string>
+	<string name="tv_name">Name:-</string>
+    <string name="tv_ttlUpload">Total Uploaded Book:-</string>
+    <string name="tv_ttlePurchase">Total Purchased Book:-</string>
+   	<string name="tv_phoneNumber">PhoneNumber:-</string> 
+    <string name="tv_book">Book Name:-</string>
+    <string name="tv_bookName">Computer Networking</string>
+    <string name="tv_price">Price:-</string>
+    <string name="tv_condition">Status:-</string>
+    <string name="tv_isbn">ISBN:-</string>
+    <string name="tv_issueDate">Issue Date:-</string>
+    <string name="tv_uploadedBy">Uploaded By:-</string>
+    <string name="tv_bookUrl">Book Url:-</string>
+    <string name="tv_description">Description:-</string>
+    <string name="tv_noBook">No Books available</string>
+
+    <!-- Button String -->
+    <string name="btn_login">Login</string>
+    <string name="btn_logout">Logout</string>
+    <string name="btn_submit">SUBMIT</string>
+    <string name="btn_update">UPDATE</string>
+    <string name="btn_order">ORDER</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_reset">RESET</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_yes">YES</string>
+    <string name="btn_no">NO</string>
+    <string name="btn_back">Back</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_forgotPass"><u>Forgot your Password?</u></string>
+    <string name="btn_myBook">My Books</string>
+    <string name="btn_purchaseBook">My Purchase Books</string>
+    <string name="btn_addBook">Add Book</string>
+    <string name="btn_editProfile">Edit Profile</string>
+    <string name="btn_browse">Browse</string>
+
+    <!-- Message String -->
+    <string name="message_Name">Please enter Name</string>
+    <string name="message_email">Please enter your Email ID</string>
+    <string name="message_phone">Please enter Phone Number</string>
+    <string name="message_address">Please enter Address</string>
+    <string name="message_password">Please enter Password</string>
+    <string name="message_confirmPass">Please enter Confirm Password</string>
+    <string name="message_validEmail">Please enter valid Email ID</string>
+    <string name="message_bothPassword">Both password should be same</string>
+    <string name="message_validPhone">Please enter valid Phone Number</string>
+    <string name="message_passwordLength">Min. password length must be 6 character</string>
+    <string name="message_searchKeyword">Please enter any keyword</string>
+    <string name="message_bookName">Please enter Book Name</string>
+    <string name="message_bookIsbn">Please enter Book ISBN</string>
+    <string name="message_bookPrice">Please enter Book Price</string>
+    <string name="message_bookURL">Please enter Book URL</string>
+    <string name="message_bookCondition">Please enter Book Condition</string>
+    <string name="message_bookIssueDate">Please enter Book Issue Date</string>
+    <string name="message_bookDescr">Please enter Book Description</string>
+    <string name="message_about">Please enter about your self</string>
+    <string name="message_validdate">Date can not less than current date</string>
+    
+    
+    <!-- Webservice API -->
+    <!-- <string name="URL_app">http://puzzleinfotech.com/book_store/users/</string> -->
+    <string name="URL_app">http://bs.phpgem.com/users/</string>
+    <string name="URL_appbook">http://bs.phpgem.com/books/</string>
+    
+    <string name="URL_register">register</string>
+    <string name="URL_login">login</string>
+    <string name="URL_forgetPassword">forgetPassword</string>
+    <string name="URL_profile">profile</string>
+    <string name="URL_edit">edit</string>
+    <string name="URL_search">search</string>
+    <string name="URL_details">details</string>
+    <string name="URL_buy">buy</string>
+    <string name="URL_mybooks">mybooks</string>
+    <string name="URL_myPurchasedBooks">myPurchasedBooks</string>
+    <string name="URL_deletebook">deletebook</string>
+    <string name="URL_add">add</string>
+    <string name="URL_editbook">edit</string>
+
+</resources>

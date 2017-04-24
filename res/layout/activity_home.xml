@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    tools:context=".HomeActivity" >
+
+    <RelativeLayout
+        android:id="@+id/ll_header"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/light_nion"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_app" />
+
+        <Button
+            android:id="@+id/btn_profile"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/profile" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_searchOter"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+			android:layout_marginTop="5dp"
+			android:layout_marginLeft="3dp"
+			android:layout_marginRight="3dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ll_header"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.75"
+            android:background="@android:drawable/editbox_background_normal"
+            android:gravity="center|left"
+            android:hint="@string/hint_bookSearch"
+            android:padding="5dp"
+            android:singleLine="true" >
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.25"
+            android:background="@color/light_nion"
+            android:text="Search"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_noBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/tv_noBook"
+        android:textColor="@color/light_nion"
+        android:visibility="gone" />
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ll_searchOter"
+        android:numColumns="2"
+        android:padding="5dp"
+        android:scrollingCache="true" >
+    </GridView>
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    tools:context=".ProfileActivity" >
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/light_nion"
+        android:gravity="center_vertical|left"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/back_button" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:paddingRight="5dp"
+            android:text="@string/title_activity_profile"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:padding="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ll_header"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_myBook"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawableRight="@drawable/star_fav"
+            android:gravity="left|center"
+            android:text="@string/btn_myBook" />
+
+        <Button
+            android:id="@+id/btn_purchaseBook"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawableRight="@drawable/bucket"
+            android:gravity="left|center"
+            android:text="@string/btn_purchaseBook" />
+
+        <Button
+            android:id="@+id/btn_addBook"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawableRight="@drawable/list"
+            android:gravity="left|center"
+            android:text="@string/btn_addBook" />
+
+        <Button
+            android:id="@+id/btn_editProfile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawableRight="@drawable/edit_profile"
+            android:gravity="left|center"
+            android:text="@string/btn_editProfile" />
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawableRight="@drawable/logout"
+            android:gravity="left|center"
+            android:text="@string/btn_logout" />
+    </LinearLayout>
+
+</RelativeLayout>

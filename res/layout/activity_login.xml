@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:padding="5dp"
+    tools:context=".LoginActivity" >
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/ll_etOuter"
+        android:layout_alignRight="@+id/ll_etOuter"
+        android:layout_below="@+id/ll_etOuter"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_selector"
+        android:text="@string/btn_login" />
+
+    <Button
+        android:id="@+id/btn_forgotPass"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/btn_login"
+        android:layout_alignRight="@+id/btn_login"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:background="@android:color/transparent"
+        android:text="@string/btn_forgotPass"
+        android:textColor="@color/light_nion" />
+
+    <LinearLayout
+        android:id="@+id/ll_etOuter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:drawableLeft="@drawable/ic_action_email"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="5dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/et_pass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:drawableLeft="@drawable/icon_password"
+            android:hint="@string/hint_pass"
+            android:layout_marginTop="5dp"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/book" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/btn_forgotPass"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:layout_alignRight="@+id/btn_forgotPass"
+        android:background="@drawable/button_selector"
+        android:text="@string/btn_register" />
+
+</RelativeLayout>
